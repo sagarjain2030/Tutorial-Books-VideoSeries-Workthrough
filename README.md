@@ -1,2 +1,5 @@
 # Tutorial-Books-VideoSeries-Workthrough
-My work for studying Tutorials,Booksand VideoSeries
+Includes my works during study of different Tutorial,Books and Video Series.
+
+### Video Series
+- Siraj Raval : Learn Python for Data Science
