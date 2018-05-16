@@ -20,6 +20,8 @@ Y = ['male', 'female', 'female', 'female', 'male', 'male', 'male',
 _X=[[184,84,44],[198,92,48],[183,83,44],[166,47,36],[170,60,38],[172,64,39],[182,80,42],[180,80,43]]
 _Y=['male','male','male','female','female','female','male','male']
 
+#TODO : Compare 4 algorithms and Name best performing algorithm
+
 #Decision Tree
 from sklearn import tree
 clf_tree = tree.DecisionTreeClassifier()
@@ -48,3 +50,13 @@ clf_svm = SVC()
 clf_svm.fit(X,Y)
 print('Prediction using SVM :', clf_svm.predict([[190,70,43]]))
 print('score is ', clf_svm.score(_X,_Y)*100)
+
+list_Algo = ['Decision Tree', 'Logistic Regression', 'Naive Bayes', 'Support Vector Machine']
+list_score = [clf_tree.score(_X,_Y)*100, clf_logisticRegression.score(_X,_Y)*100,
+              clf_GaussianNB.score(_X,_Y)*100, clf_svm.score(_X,_Y)*100]
+maximum = max(list_score)
+index_Algo = [i for i,j in enumerate(list_score) if j == maximum]
+
+print("Better result availalbe with alogrithm:")
+for x in index_Algo:
+    print(list_Algo[x])
