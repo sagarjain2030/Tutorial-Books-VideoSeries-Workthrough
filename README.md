@@ -13,3 +13,4 @@ Includes my works during study of different Tutorial,Books and Video Series.
     ###### Dependencies installed
         - Numpy
         - Pandas
+        - matplotlib
