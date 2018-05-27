@@ -20,11 +20,15 @@ Y = array[:,8]
 kfold = KFold(n_splits=10, random_state=7)
 
 #Comparing Logitic Regression, SVM and Naive Bayes
+performance = []
+Algorithm = []
 
 #Logistic Regression
 model2 = LogisticRegression()
 scoring = 'accuracy'
 results = cross_val_score(model2, X, Y, cv=kfold, scoring=scoring)
+performance.append(results.mean()*100)
+Algorithm.append("Logistic Regression")
 print("Logistic Regression")
 print(results.mean())
 
@@ -32,6 +36,8 @@ print(results.mean())
 model3 = SVC()
 scoring = 'accuracy'
 results = cross_val_score(model3, X, Y, cv=kfold, scoring=scoring)
+performance.append(results.mean()*100)
+Algorithm.append("Support Vector Machine")
 print("Support Vector Machine")
 print(results.mean())
 
@@ -39,5 +45,11 @@ print(results.mean())
 model4 = GaussianNB()
 scoring = 'accuracy'
 results = cross_val_score(model4, X, Y, cv=kfold, scoring=scoring)
+performance.append(results.mean()*100)
+Algorithm.append("Naive Bayes")
 print("Naive Bayes")
 print(results.mean())
+
+#Lesson 10
+#Comparing peformances of different algorithms
+print("Algorithm performing better is " + Algorithm[performance.index(max(performance))])
