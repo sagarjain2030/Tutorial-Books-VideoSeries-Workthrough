@@ -4,12 +4,8 @@ Includes my works during study of different Tutorial,Books and Video Series.
 ### Video Series
 - Siraj Raval : Learn Python for Data Science
     ###### Dependencies installed
-        - Numpy
-        - Scipy
-        - Scikit_Learn
-        - Tweepy
-        - textBlob
-        - LightFM
+        - Numpy         |   - Scipy    |  - Scikit_Learn  
+        - Tweepy        |   - textBlob |   - LightFM
         
 
 ### Tutorials
