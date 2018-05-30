@@ -13,3 +13,5 @@ You can follow Mini course by creating virtual environment in anaconda with Pyth
   - Numpy
   - Pandas
   - matplotlib
+  - Scikit_Learn
+  - csv
