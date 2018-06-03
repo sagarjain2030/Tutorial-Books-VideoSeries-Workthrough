@@ -17,3 +17,4 @@ You can follow Mini course by creating virtual environment in anaconda with Pyth
   - csv
   - Pickel
   
+##### Study of Iris Dataset
