@@ -33,4 +33,16 @@ The requirements for each video is as below:
         - MatplotLib
         - Tweepy
         - Textblob       
-        - Keras (backend Tensorflow)       
+        - Keras (backend Tensorflow) 
+              
+- **_Fifth Video:_**
+
+        - Numpy
+        - Functools
+        - Pillow
+        - Tensorflow
+        - Matplotlib
+        - Urllib
+        - Os
+        - Zipfile
+        - OpenCV
