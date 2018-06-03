@@ -25,3 +25,12 @@ The requirements for each video is as below:
         - Numpy
         - scipy
         - LightFM
+        
+- **_Fourth Video:_**
+
+        - Numpy
+        - Scikit Learn
+        - MatplotLib
+        - Tweepy
+        - Textblob       
+        - Keras (backend Tensorflow)       
