@@ -46,3 +46,11 @@ The requirements for each video is as below:
         - Os
         - Zipfile
         - OpenCV
+        
+**_Sixth Video:_**
+
+        - Numpy
+        - Pandas
+        - Scikit Learn
+        - TPOT
+        - Pywin32
