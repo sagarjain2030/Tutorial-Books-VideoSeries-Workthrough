@@ -25,3 +25,32 @@ The requirements for each video is as below:
         - Numpy
         - scipy
         - LightFM
+        
+- **_Fourth Video:_**
+
+        - Numpy
+        - Scikit Learn
+        - MatplotLib
+        - Tweepy
+        - Textblob       
+        - Keras (backend Tensorflow) 
+              
+- **_Fifth Video:_**
+
+        - Numpy
+        - Functools
+        - Pillow
+        - Tensorflow
+        - Matplotlib
+        - Urllib
+        - Os
+        - Zipfile
+        - OpenCV
+        
+**_Sixth Video:_**
+
+        - Numpy
+        - Pandas
+        - Scikit Learn
+        - TPOT
+        - Pywin32
