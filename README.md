@@ -3,11 +3,12 @@ Includes my works during study of different Tutorial,Books and Video Series. Bol
 
 ### Video Series:
 
-- **[Siraj Raval : Learn Python for Data Science](https://www.youtube.com/watch?v=T5pRlIbr6gg&list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU)**
+- **[Siraj Raval : Learn Python for Data Science](https://github.com/sagarjain2030/Tutorial-Books-VideoSeries-Workthrough/tree/master/Learn_Python_for_Data_Science)**
+- **[Udacity : Course Collaboration Travel Plans](https://github.com/sagarjain2030/Tutorial-Books-VideoSeries-Workthrough/tree/master/course-collaboration-travel-plans)
 
 ### Tutorials:
-- **[Scikit Learn Kaggle](https://github.com/sagarjain2030/Tutorial-Books-VideoSeries-Workthrough/tree/Dev_Branch/ScikitLearn_Kaggle)**
-- **[Machine Learning Master: minicourse](https://machinelearningmastery.com/python-machine-learning-mini-course/)**
+- **[Scikit Learn Kaggle](https://github.com/sagarjain2030/Tutorial-Books-VideoSeries-Workthrough/tree/master/ScikitLearn_Kaggle)**
+- **[Machine Learning Master: minicourse](https://github.com/sagarjain2030/Tutorial-Books-VideoSeries-Workthrough/tree/master/ML_MasteryMiniCourse)**
 
 ### Books:
 
