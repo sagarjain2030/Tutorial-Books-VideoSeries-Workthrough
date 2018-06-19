@@ -18,3 +18,4 @@ You can follow Mini course by creating virtual environment in anaconda with Pyth
   - Pickel
   
 ##### Study of Iris Dataset
+You can find relevant post [Here](http://sagarjain.in/iris-dataset-dissected/)
