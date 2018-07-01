@@ -9,7 +9,8 @@ Includes my works during study of different Tutorial,Books and Video Series. Bol
 
 ### Tutorials:
 - **[Scikit Learn Kaggle](https://github.com/sagarjain2030/Tutorial-Books-VideoSeries-Workthrough/tree/master/ScikitLearn_Kaggle)**
-- **[Machine Learning Master: minicourse](https://github.com/sagarjain2030/Tutorial-Books-VideoSeries-Workthrough/tree/master/ML_MasteryMiniCourse)**
+- **[Machine Learning Mastery: minicourse](https://github.com/sagarjain2030/Tutorial-Books-VideoSeries-Workthrough/tree/master/ML_MasteryMiniCourse)**
+- **[Machine Learning Mastery: In Memory Dataset](https://machinelearningmastery.com/practice-machine-learning-with-small-in-memory-datasets-from-the-uci-machine-learning-repository)
 
 ### Books:
 
