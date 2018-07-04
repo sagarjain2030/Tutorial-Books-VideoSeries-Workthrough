@@ -1,11 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from pandas.plotting import scatter_matrix
-from keras import Sequential
-
+from keras.models import Sequential
+from keras.layers import Dense
 
 import numpy as np
 import sys
+
+from pygments.lexer import include
 from sklearn import model_selection
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
@@ -81,9 +83,9 @@ Outcome                      0.221898  0.466581       0.065068       0.074752  0
 '''
 
 #Histogram
-dataset.hist
-scatter_matrix(dataset)
-plt.show()
+#dataset.hist
+#scatter_matrix(dataset)
+#plt.show()
 
 #Creating Feature DataSet and Target DataSet
 X = dataset[['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']]
@@ -114,3 +116,24 @@ for name, model in models:
     model_Done.append(model)
     msg = "%s scoring:  mean: %f (Std Deviation: %f)" % (name, cv_results.mean(), cv_results.std())
     print(msg)
+
+'''
+Linear Regression scoring:  mean: 0.732609 (Std Deviation: 0.075963)
+K Neightbours scoring:  mean: 0.680435 (Std Deviation: 0.065254)
+Decision Tree Classifiers scoring:  mean: 0.654348 (Std Deviation: 0.066260)
+Gaussian naive Bayes scoring:  mean: 0.726087 (Std Deviation: 0.061641)
+Support Vector Machine scoring:  mean: 0.619565 (Std Deviation: 0.087092)
+'''
+
+#Now lets try a simple feedforward 3 layer neural network using keras
+model_nn = Sequential()
+model_nn.add(Dense(19,input_dim=8,activation='relu'))
+model_nn.add(Dense(12,activation='relu'))
+model_nn.add(Dense(1,activation='sigmoid'))
+
+model_nn.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
+model_nn.fit(Xtrain,ytrain,epochs=150,verbose=0,batch_size=10)
+
+scores = model_nn.evaluate(Xtest,ytest)
+print("Score is ",scores[1]*100.00)
+#Score is  75.00000015481726
