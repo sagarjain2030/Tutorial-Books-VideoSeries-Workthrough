@@ -102,6 +102,8 @@ for name, model in models:
 #Gaussian naive Bayes scoring:  mean: 0.909091 (Std Deviation: 0.215130)
 #Support Vector Machine scoring:  mean: 0.927273 (Std Deviation: 0.218182)
 
+## Neural Networks are not applied since data size is very small
+
 #Using GridSearchCV for SVM to find best parameter
 #Since its last model
 
