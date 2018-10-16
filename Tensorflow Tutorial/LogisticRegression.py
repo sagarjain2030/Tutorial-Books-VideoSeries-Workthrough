@@ -6,8 +6,8 @@ Created on Mon Oct 15 19:03:37 2018
 """
 
 import tensorflow as tf
-
-mnist = tf.examples.tutorials.mnist.input_data.read_data_sets("/tmp/",one_hot=True)
+from tensorflow.examples.tutorials.mnist import input_data
+mnist = input_data.read_data_sets("/tmp/",one_hot=True)
 
 X = tf.placeholder(tf.float32,[None,28*28])
 Y = tf.placeholder(tf.float32,[None,10])
@@ -19,9 +19,8 @@ learnRate = 0.01
 epochNumbers = 50
 batchSize = 128
 
-
-pred = tf.nn.softmax(tf.matmul(X,W) + b)
-cost = tf.reduce_mean(-tf.reduce_sum(tf.multiply(Y,tf.log(pred)),reduction_indices=1))
+pred = tf.matmul(X,W) + b
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=Y,logits=pred))
 optimizer = tf.train.GradientDescentOptimizer(learning_rate = learnRate).minimize(cost)
 
 init = tf.global_variables_initializer()
