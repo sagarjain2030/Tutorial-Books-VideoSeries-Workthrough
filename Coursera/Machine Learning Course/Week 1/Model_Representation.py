@@ -28,11 +28,16 @@ def hypothesisValue(X,weights):
     Y_pred.append(np.matmul(W.T,X) + b)
     return Y_pred
 
+
+def calculateCost(Y_pred,Y,m):
+    cost = (1/ (2*m)) * np.sum(np.power(np.subtract(Y_pred,Y),2))
+    return cost
+    
 data = [[2104,460],[1416,232],[1534,315],[852,178]]
 
 X,Y = IODifferentiation(data)
 Weight = LinearEquation(X)
-
+m = X.shape[0]
 print(X)
 print(Y)
 print(X.shape)
@@ -49,3 +54,6 @@ for i in range(X.shape[0]):
 print('************************************************************************')
 
 Y_pred = hypothesisValue(X,Weight)
+print(Y_pred,)
+cost = calculateCost(Y_pred,Y,m)
+print(cost)
