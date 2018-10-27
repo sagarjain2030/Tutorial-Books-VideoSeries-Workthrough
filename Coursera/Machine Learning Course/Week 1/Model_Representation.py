@@ -15,17 +15,14 @@ def IODifferentiation(data):
     return X,Y
 
 def LinearEquation(X):
-    Weight = []
-    for i in range(X.shape[0]):
-        W = np.random.rand(X.shape[1]+1)
-        Weight.append(list(W))
-    return Weight
+    W = np.random.rand(X.shape[1]+1)
+    return W
 
 def hypothesisValue(X,weights):
     Y_pred = []
-    W = np.array(weights)[:,1:]
-    b = np.array(weights)[:,:1]
-    Y_pred.append(np.matmul(W.T,X) + b)
+    W = np.array(weights)[1:]
+    b = np.array(weights)[:1]
+    Y_pred.append(np.multiply(W.T,X) + b)
     return Y_pred
 
 
@@ -50,10 +47,10 @@ print()
 print('************************************************************************')
 print("Y     = W0           +    X   *  W1")
 for i in range(X.shape[0]):
-    print(str(Y[i]) + " = " + str(Weight[i][0]) +  " + " + str(X[i]) +  " * "  + str(Weight[i][1]))
+    print(str(Y[i]) + " = " + str(Weight[0]) +  " + " + str(X[i]) +  " * "  + str(Weight[1]))
 print('************************************************************************')
 
 Y_pred = hypothesisValue(X,Weight)
-print(Y_pred,)
+print(Y_pred)
 cost = calculateCost(Y_pred,Y,m)
 print(cost)
