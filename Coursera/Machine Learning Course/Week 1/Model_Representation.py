@@ -29,6 +29,16 @@ def hypothesisValue(X,weights):
 def calculateCost(Y_pred,Y,m):
     cost = (1/ (2*m)) * np.sum(np.power(np.subtract(Y_pred,Y),2))
     return cost
+
+def devCostFunction(i):
+    #For the time being since haven't calculated derivatives yet
+    return 1
+
+def gradientDescentStep(Weight,learning_Rate = 0.01):
+    for i in range(len(Weight)):
+        Weight[i] = Weight[i] - (learning_Rate * devCostFunction(i))
+    
+    return Weight
     
 data = [[2104,460],[1416,232],[1534,315],[852,178]]
 
@@ -54,3 +64,5 @@ Y_pred = hypothesisValue(X,Weight)
 print(Y_pred)
 cost = calculateCost(Y_pred,Y,m)
 print(cost)
+Weight = gradientDescentStep(Weight,learning_Rate=0.1)
+print(Weight)
