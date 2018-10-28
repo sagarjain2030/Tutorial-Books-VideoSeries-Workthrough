@@ -30,18 +30,46 @@ def calculateCost(Y_pred,Y,m):
     cost = (1/ (2*m)) * np.sum(np.power(np.subtract(Y_pred,Y),2))
     return cost
 
-def devCostFunction(i):
-    #For the time being since haven't calculated derivatives yet
-    return 1
+def devCostFunction(i,X,Y_pred,Y):
+    m = X.shape[0]
+    if(i == 0):
+        return ((1/m) * np.sum(np.subtract(Y_pred,Y)))
+    else:
+        return ((1/m) * np.sum(np.multiply(np.subtract(Y_pred,Y),X))) 
 
-def gradientDescentStep(Weight,learning_Rate = 0.01):
+def gradientDescentStep(X,Y,Y_pred,Weight,learning_Rate = 0.01):
     for i in range(len(Weight)):
-        Weight[i] = Weight[i] - (learning_Rate * devCostFunction(i))
+        Weight[i] = Weight[i] - (learning_Rate * devCostFunction(i,X,Y_pred,Y))
     
     return Weight
     
 data = [[2104,460],[1416,232],[1534,315],[852,178]]
 
+#Creating New valid Dataset
+# taken W0 = 2 ,W1 = 2
+dataset = [[1,4],[3,8],[2,6],[5,12],[8,18]]
+def LinearRegression(dataset):
+    X,Y = IODifferentiation(dataset)
+    Weight = LinearEquation(X)
+    print(Weight)
+    cost = 10000000
+    m = X.shape[0]
+    iteration = 0
+    #Running Gradien Descent Step
+    while(iteration < 1000):
+        iteration = iteration + 1
+        print("iteration Number: " + str(iteration))
+        Y_pred = hypothesisValue(X, Weight)
+        cost = calculateCost(Y_pred,Y,m)
+        print(cost)
+        Weight = gradientDescentStep(X,Y,Y_pred,Weight,learning_Rate = 0.01)
+        print(Weight)
+    print("Final Weight values are")
+    print(Weight)
+    print("Final Hypothesis values")
+    print(hypothesisValue(X,Weight))
+
+LinearRegression(dataset)
 X,Y = IODifferentiation(data)
 Weight = LinearEquation(X)
 m = X.shape[0]
@@ -64,5 +92,5 @@ Y_pred = hypothesisValue(X,Weight)
 print(Y_pred)
 cost = calculateCost(Y_pred,Y,m)
 print(cost)
-Weight = gradientDescentStep(Weight,learning_Rate=0.1)
+#Weight = gradientDescentStep(Weight,learning_Rate=0.1)
 print(Weight)
