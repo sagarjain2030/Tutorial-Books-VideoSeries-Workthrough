@@ -51,11 +51,16 @@ def GradientDescent(X,Y,Weight,iterations,learning_Rate = 0.01):
         
     return Weight,cost
 
-#Creating New valid Dataset
-# taken W0 = 2 ,W1 = 2,W2 = 2
-data = [[1,1,6],[3,4,16],[2,5,16],[5,7,26],[8,3,24]]
+def main():
+    #Creating New valid Dataset
+    # taken W0 = 2 ,W1 = 2,W2 = 2
+    data = [[1,1,6],[3,4,16],[2,5,16],[5,7,26],[8,3,24]]
 
-X,Y = IODifferentiation(data)
-Weight = LinearEquationoefficient(X)
-Weight,cost = GradientDescent(X,Y,np.matrix(Weight),iterations = 1000,learning_Rate = 0.01)
-print(Weight,cost)
+    X,Y = IODifferentiation(data)
+    Weight = LinearEquationoefficient(X)
+    Weight,cost = GradientDescent(X,Y,np.matrix(Weight),iterations = 1000,learning_Rate = 0.01)
+    print(Weight,cost)
+    
+
+if __name__ == "__main__":
+    main()
