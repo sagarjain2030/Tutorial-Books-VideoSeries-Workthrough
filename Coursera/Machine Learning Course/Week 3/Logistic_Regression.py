@@ -27,19 +27,28 @@ def calculateSigmoid(x):
 def loss(h, y):
     return (-y.T * np.log(h) - (1 - y).T * np.log(1 - h)).mean()
 
+def gradientValue(X,h,y):
+    gradient = np.dot(X.T,h-y)/y.size
+    return gradient
+
 def calculateCost(x,Y):
     x = x + np.exp(-10)
     print(np.log(x))
     print(np.log(1 - x))
-    #cost = (-1) * np.multiply(Y,np.log(x)) + (-1) * np.multiply((1-Y),np.log(1-))
 
-
-def LogisticRegression(data):
+def LogisticRegression(data,iterations,alpha=0.01):
     X,Y = IODifferentiation(data)
     weights = paramintialization(X)
-    exponentValue = np.dot(X,weights.T)
-    h = calculateSigmoid(exponentValue)
-    print(loss(h,Y))
+    for i in range(iterations):
+        exponentValue = np.dot(X,weights.T)
+        h = calculateSigmoid(exponentValue)
+        cost = loss(h,Y)
+        weights = weights - alpha * gradientValue(X,h,Y)
+        
+    return weights,cost
+
+def predict(X,weights,threshold = 0.4):
+    return(calculateSigmoid(np.dot(X,weights.T)) > threshold)
     
 def main():
     data = [[21,5,1,45,1],
@@ -47,8 +56,7 @@ def main():
             [15,3,2,30,1],
             [8,2,1,36,0]] 
     
-    LogisticRegression(data)
-
+    weights, cost = LogisticRegression(data)
     
 if __name__ == "__main__":
     main()
