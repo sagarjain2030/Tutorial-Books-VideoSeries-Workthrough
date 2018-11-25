@@ -24,14 +24,10 @@ def calculateError(X,Weight,Y):
     error = (X*Weight.T) - Y
     return error
 
-def calculateCost(Y_pred,Y,m):
-    cost = (1/ (2*m)) * np.sum(np.power(np.subtract(Y_pred,Y),2))
-    return cost
-
-
-def ComputeCost(X, y, theta):
-    inner = np.power(((X * theta.T) - y), 2)
-    return np.sum(inner) / (2 * len(X))
+def ComputeCost(X, y, theta,regularizeFactor = 0.01):
+    inner = np.power(((X * theta.T) - y), 2) 
+    regularizationTerm = regularizeFactor * np.sum(np.power(theta,2))
+    return (np.sum(inner) + regularizationTerm) / (2 * len(X))
 
 def GradientDescent(X,Y,Weight,iterations,learning_Rate = 0.01):
     newWeight = np.matrix(np.zeros(Weight.shape))
