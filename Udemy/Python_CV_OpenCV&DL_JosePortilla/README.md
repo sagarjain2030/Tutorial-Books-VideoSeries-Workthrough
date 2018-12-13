@@ -12,3 +12,6 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 
 ### Section 2 : NumPy and Image Basics
 - Basic introduction to Numpy and Image.
+- Played with color channel of image in numpy.You can find the gif of results 
+
+ ![Playing_with_color_channel](Data/numpyPlay.gif)
