@@ -15,3 +15,7 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 - Played with color channel of image in numpy.You can find the gif of results 
 
  ![Playing_with_color_channel](Data/numpyPlay.gif)
+
+### Section 3 : Image Basics with OpenCV
+- Basic operation on Images using OpenCV
+
