@@ -24,7 +24,6 @@ print('shape of image' + str(img.shape))
 print("Showing Originally read Image")
 plt.imshow(img)
 
-
 ### MATPLOTLIB expects => RGB order channel
 ### OpenCV gives => BGR order channel
 fix_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -75,6 +74,13 @@ print("Flipping Image in both direction")
 flip_image_both = cv2.flip(fix_img,-1)
 plt.imshow(flip_image_both)
 
-### Writing New File
+### Writing New File and showing it using cv2 function
 cv2.imwrite('../Data/NewImg.png',fix_img)
-plt.imshow(cv2.imread('../Data/NewImg.png'))
+image = cv2.imread('../Data/NewImg.png')
+
+while True:
+    cv2.imshow('NewImage',image)
+    if cv2.waitKey(10) & 0xFF == 27:
+        break
+    
+cv2.destroyAllWindows()
