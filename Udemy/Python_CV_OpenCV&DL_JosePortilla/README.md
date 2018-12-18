@@ -18,4 +18,5 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 
 ### Section 3 : Image Basics with OpenCV
 - Basic operation on Images using OpenCV
+- Drawing basic shapes
 
