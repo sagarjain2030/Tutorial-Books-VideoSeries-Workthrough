@@ -19,4 +19,10 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 ### Section 3 : Image Basics with OpenCV
 - Basic operation on Images using OpenCV
 - Drawing basic shapes
+- Mouse event handling using OpenCV and Python
+
+### Section 4 : Image Processing
+- Color mapping of image: RGB,HSV,HLS
+- Blending and Pasting of Image
+
 
