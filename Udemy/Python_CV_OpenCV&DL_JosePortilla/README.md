@@ -24,5 +24,6 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 ### Section 4 : Image Processing
 - Color mapping of image: RGB,HSV,HLS
 - Blending and Pasting of Image
+-  Blurring of Image using Gaussian filter, Median filter and filter from scratch
 
 
