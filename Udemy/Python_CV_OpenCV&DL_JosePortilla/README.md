@@ -26,5 +26,6 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 - Blending and Pasting of Image
 - Blurring of Image using Gaussian filter, Median filter and filter from scratch
 - Morphological Operators like erosion,dilation,Opening,closing
+- Also Includes Sobel filters and Histogram Manipulation
 
 
