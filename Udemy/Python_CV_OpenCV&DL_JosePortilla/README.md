@@ -28,4 +28,8 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 - Morphological Operators like erosion,dilation,Opening,closing
 - Also Includes Sobel filters and Histogram Manipulation
 
+### Section 5 : Video basics with OpenCV
+- Capturing and Saving live video
+- Interacting live feed data from Webcam
+- Opening a Video File and Performing Operations over it.
 
