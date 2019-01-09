@@ -33,3 +33,7 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 - Interacting live feed data from Webcam
 - Opening a Video File and Performing Operations over it.
 
+### Section 6 : Object Detection with OpenCV
+- Template matching
+- Corner Detection
+
