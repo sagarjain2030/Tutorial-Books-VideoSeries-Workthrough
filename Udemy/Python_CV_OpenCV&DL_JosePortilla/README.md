@@ -36,4 +36,6 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 ### Section 6 : Object Detection with OpenCV
 - Template matching
 - Corner Detection
+- Edge Detection
+- Grid Detection
 
