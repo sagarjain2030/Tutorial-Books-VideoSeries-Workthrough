@@ -38,4 +38,5 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 - Corner Detection
 - Edge Detection
 - Grid Detection
+- Feature Detection
 
