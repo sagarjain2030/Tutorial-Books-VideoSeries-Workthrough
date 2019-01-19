@@ -39,4 +39,4 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 - Edge Detection
 - Grid Detection
 - Feature Detection
-
+- Watershed Algorithm
