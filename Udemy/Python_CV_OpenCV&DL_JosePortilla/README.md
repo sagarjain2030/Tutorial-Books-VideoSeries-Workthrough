@@ -40,3 +40,4 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 - Grid Detection
 - Feature Detection
 - Watershed Algorithm
+- Face Detection
