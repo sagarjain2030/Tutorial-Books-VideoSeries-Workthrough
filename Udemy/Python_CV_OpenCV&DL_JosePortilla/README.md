@@ -41,3 +41,5 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 - Feature Detection
 - Watershed Algorithm
 - Face Detection
+
+ ![Watershed_Custom_Seed](ObjectDetection/WatershedSeed.JPG)
