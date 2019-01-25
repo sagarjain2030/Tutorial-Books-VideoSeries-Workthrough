@@ -43,3 +43,7 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 - Face Detection
 
  ![Watershed_Custom_Seed](ObjectDetection/WatershedSeed.JPG)
+ 
+### Section 7 : Object Tracking with OpenCV
+- Optical Flow coding (video included is using the Gunnar Farneback’s algorithm)
+ 
