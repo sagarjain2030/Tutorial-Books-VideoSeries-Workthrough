@@ -1,7 +1,7 @@
 # Computer Vision course by Jose Portilla - Udemy
 
 This repo includes my work for Udemy's Computer Vision course authored by Jose Portilla.
-You can find the course [here].(https://www.udemy.com/python-for-computer-vision-with-opencv-and-deep-learning/)
+You can find the course [here](https://www.udemy.com/python-for-computer-vision-with-opencv-and-deep-learning/)
 
 
 ### Requirements
@@ -49,3 +49,13 @@ You can find the course [here].(https://www.udemy.com/python-for-computer-vision
 - MeanShift and CamShift
 - Other tracking APIs in OpenCV
  
+
+### Section 8 : Object Recognition with Deep Learning
+- Understanding Image recognition with deep learning using Keras.
+- Used MNIST dataset with Convolution Neural network.
+- Solved Kaggle problem using Dense Neural network.Check out my kernel on Kaggle
+- Also tried CIFAR10 and Cat vs Dog problem. Please see respective Notebooks.
+- Learn a lot about YOLO and how to use for custom images.Checkout gif of my own images.
+- Not uploading datasets and saved models since files are too big.
+
+![Yolo gif](Deep_Learning/YOLO.gif)
